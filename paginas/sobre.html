@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Gelateria</title>
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/sobre.css" />
+    <style>
+        body {
+            border-radius: 10px; 
+            padding: 0; 
+            margin: 0;
+            background-color: #f9f9f9; 
+        }
+        .welcome {
+            background-color: #fb0202; 
+            color: #080808;
+            padding: 15px; 
+            text-align: center; 
+            width: 100%; 
+            margin: 0; 
+        }
+        .navbar {
+            margin: 0; 
+            width: 100%;
+        }
+        .nav-item {
+            margin-left: 15px;
+        }
+        .card-body {
+            padding: 20px; 
+        }
+        .btn-link {
+            border: 2px solid #4002fb; 
+            border-radius: 3px; 
+            padding: 5px; 
+            text-align: left; 
+            display: block; 
+            width: 100%; 
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover; 
+        }
+        .navbar-brand img {
+            width: 100px; 
+        }
+    </style>
+</head>
+<body>
+    <header class="welcome">Bem-vindo(a) ao portal Gelateria Delícias Geladas</header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo.png" alt="Logo da Gelateria" style="width: 100px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./sobre.html">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sabores.html">Sabores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="menu">
+            <article>
+                <h5 class="sub-title">Bem-vindo(a) ao mundo da La Gelateria</h5>
+                <br />
+                <h5 class="sub-title">Sobre nós</h5>
+                <br />
+                <div class="row">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card w-100 border-0">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Horário de funcionamento:
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        - Segunda a Sexta: 12h às 22h<br>
+                                        - Sábado: 10h às 23h<br>
+                                        - Domingo: 10h às 21h<br>
+                                        Venha nos visitar e saborear nossos deliciosos sorvetes em qualquer dia da semana!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Cardápio completo:
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1. Sorvetes Artesanais:<br>
+                                    Chocolate Belga: Rico e cremoso, feito com chocolate de alta qualidade.<br>
+                                    Baunilha Bourbon: Uma mistura suave com baunilha pura e leite fresco.<br>
+                                    Morango Natural: Feito com morangos frescos e açúcar, sem conservantes.<br>
+                                    <br>
+                                    2. Sabores Especiais:<br>
+                                    Caramelo Salgado: Combinação perfeita de doce e salgado, com pedaços de caramelo.<br>
+                                    Menta com Chocolate: Refrescante, com pedacinhos de chocolate amargo.<br>
+                                    Tapioca com Coco: Uma mistura exótica, leve e tropical.<br>
+                                    <br>
+                                    3. Coberturas e Toppings:<br>
+                                    Granola crocante, calda de chocolate, frutas frescas, e nuts variadas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Preços:
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Sorvetes Artesanais<br>
+                                    - Chocolate: R$ 12,00 <br>
+                                    - Baunilha Bourbon: R$ 10,00 <br>
+                                    - Morango Natural: R$ 11,00 <br>
+                                    <br>
+                                    Sabores Especiais <br>
+                                    - Caramelo Salgado: R$ 13,00 <br>
+                                    - Menta com Chocolate: R$ 14,00 <br>
+                                    - Tapioca com Coco: R$ 12,00 <br>
+                                    <br>  
+                                    Coberturas e Toppings <br>
+                                    - Granola Crocante: R$ 3,00 <br>
+                                    - Calda de Chocolate: R$ 2,00 <br>
+                                    - Frutas Frescas: R$ 4,00 <br>
+                                    - Nuts Variadas: R$ 3,50 <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Promoções:
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    - Combo Família:<br>
+                                    Leve para casa um balde de 2 litros do seu sabor favorito e ganhe um <br>
+                                    acompanhamento de toppings grátis!<br>
+                                    - Promoção de Aniversário:<br>
+                                    Celebre seu aniversário conosco! Venha em qualquer dia do mês do seu aniversário <br>
+                                    e ganhe um sorvete pequeno grátis, além de 10% de desconto na sua compra.<br>
+                                    - Sabor do Mês:<br>
+                                    Experimente nosso sabor exclusivo do mês com um desconto especial. Em novembro, <br>
+                                    saboreie o delicioso "AÇAÍ" por 15% a menos!<br>
+                                    - Fidelidade Deliciosa:<br>
+                                    A cada 10 sorvetes comprados, o próximo é grátis! Basta solicitar seu cartão de <br>
+                                    fidelidade no caixa. <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../img/local.jpg" class="img-fluid responsive-image" alt="Imagem responsiva" />
+                </div>
+            </article>
+        </section>
+      </main>
+      <footer>
+          <nav>
+              <a href="./sobre.html">Sobre nós</a> |
+              <a href="./sabores.html">Sabores</a> |
+              <a href="./contato.html">Contato</a>
+          </nav>
+          <hr />
+          <p>©2024 Gelateria Delícias Geladas. Todos os direitos reservados.</p>
+      </footer>
+</body>
+</html>

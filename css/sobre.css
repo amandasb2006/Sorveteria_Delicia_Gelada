@@ -1,0 +1,9 @@
+.row {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .accordion {
+    width: 800px;
+  }  

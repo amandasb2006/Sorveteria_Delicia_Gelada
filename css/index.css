@@ -1,0 +1,68 @@
+body {
+    min-height: 100vh;
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+  }
+  
+  .navbar {
+    background: #0057b8;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .navbar-collapse {
+    flex-direction: row-reverse;
+  }
+  
+  header.welcome {
+    padding: 8px;
+    background-color: #e1e1e1;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .menu {
+    padding: 28px 80px;
+    background-color: #f8f6f5;
+  }
+  .menu.grid {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    grid-template-rows: 1fr;
+    padding: 28px 80px;
+    background-color: #f8f6f5;
+    gap: 12px;
+  }
+  
+  .more {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black !important;
+    font-weight: 600 !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+    font-size: 13px;
+  }
+  
+  .sub-title {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .about {
+    max-width: 800px;
+  }
+  
+  footer {
+    width: 100%;
+    padding: 16px 80px;
+  }
